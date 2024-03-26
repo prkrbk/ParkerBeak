@@ -6,7 +6,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    color: #0014ae;
+    color: #000000;
     background-color: rgb(191, 191, 191);
     cursor: none;
     height: 100vh;
@@ -38,12 +38,12 @@ body {
 }
 
 a {
-    color: #0014ae;
+    color: #000000;
     text-align: right;
 }
 
 a:visited {
-    color: #0014ae;
+    color: #000000;
 }
 
 a:hover {
