@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>ParkerBeak</title>
+    <link rel="stylesheet" href="ParkerBeak.css"/>
+    <link rel="icon" type="image/x-icon" href="ParkerBeak.png">
+  </head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PN08G4SYBD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PN08G4SYBD');
+</script>
+    <!-- Google tag (gtag.js) -->
+<body>
+<div class="BOX">
+ <div class="content">
+    <h1>
+         Parker Beak is a 
+        <br> Brooklyn-based 
+        <br> digital product 
+        <br> maker uniting art 
+        <br> and technology to 
+        <br> solve problems 
+        <br>and generate joy. 
+    </h1>
+  <section class="work">
+    <p>
+      Currently with <a href="https://work.co" target="_blank" > Work & Co</a>
+    <br>
+      Select work includes: 
+      <a href="https://gemini.google.com/app" target="_blank"> Google,</a>
+    
+      <a href="https://www.tiktok.com/business/en-US" target="_blank"> TikTok,</a>
+      <a href="https://www.oppo.com/en/smartphones/series-find-n/find-n2-flip/" target="_blank"> Oppo,</a>
+      <a href="https://www.pgatour.com/leaderboard" target="_blank"> PGA Tour,</a>
+      and
+      <a href="https://www.homedepot.com/p/RYOBI-ONE-18V-Cordless-1-2-in-Drill-Driver-Kit-with-1-1-5-Ah-Battery-and-Charger-PCL206K1/317987598" target="_blank"> Home Depot</a>
+    </p>
+</section>
+    <section class="resume">
+        <a href="./ParkerBeakResume2024Digital.pdf" target="ParkerBeakResume2024_github.pdf">Resume</a>
+    </section>
+    <section class="contact">
+      <a href=mailto:prkrbk@gmail.com target="mailto:prkrbk@gmail.com">Contact</a>
+  </section>
+ </div>
+</div>
+</body>
+
+<title>Cursor Trail Effect</title>
+    <script> 
+      const dots = [];
+      const cursor = {
+        x: 0,
+        y: 0,
+      };
+
+      for (let i = 0; i < 1; i++) {
+        const dot = document.createElement("div");
+        dot.className = "dot";
+        document.body.appendChild(dot);
+        dots.push(dot);
+      }
+
+      document.addEventListener("mousemove", (e) => {
+        cursor.x = e.clientX;
+        cursor.y = e.clientY;
+      });
+
+      function draw() {
+        let x = cursor.x;
+        let y = cursor.y;
+
+        dots.forEach((dot, index) => {
+          const nextDot = dots[index + 1] || dots[0];
+
+          dot.style.left = x + "px";
+          dot.style.top = y + "px";
+
+          x += (nextDot.offsetLeft - dot.offsetLeft) * 0.5;
+          y += (nextDot.offsetTop - dot.offsetTop) * 0.5;
+        });
+      }
+
+      setInterval(draw, 10);
+    </script>
